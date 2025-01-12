@@ -31,7 +31,8 @@
 # La variable "default payment next month" corresponde a la variable objetivo.
 #
 # El dataset ya se encuentra dividido en conjuntos de entrenamiento y prueba
-# en la carpeta "files/input/".
+# en la carpeta "../files/input/train_data.csv.zip" y "../files/input/test_data.csv.zip"
+# respectivamente.
 #
 # Los pasos que debe seguir para la construcción de un modelo de
 # clasificación están descritos a continuación.
@@ -44,8 +45,6 @@
 # - Elimine los registros con informacion no disponible.
 # - Para la columna EDUCATION, valores > 4 indican niveles superiores
 #   de educación, agrupe estos valores en la categoría "others".
-# - Renombre la columna "default payment next month" a "default"
-# - Remueva la columna "ID".
 #
 #
 # Paso 2.
@@ -74,7 +73,7 @@
 # Paso 6.
 # Calcule las metricas de precision, precision balanceada, recall,
 # y f1-score para los conjuntos de entrenamiento y prueba.
-# Guardelas en el archivo files/output/metrics.json. Cada fila
+# Guardelas en el archivo "../files/output/metrics.json". Cada fila
 # del archivo es un diccionario con las metricas de un modelo.
 # Este diccionario tiene un campo para indicar si es el conjunto
 # de entrenamiento o prueba. Por ejemplo:
@@ -85,7 +84,7 @@
 #
 # Paso 7.
 # Calcule las matrices de confusion para los conjuntos de entrenamiento y
-# prueba. Guardelas en el archivo files/output/metrics.json. Cada fila
+# prueba. Guardelas en el archivo "../files/output/metrics.json". Cada fila
 # del archivo es un diccionario con las metricas de un modelo.
 # de entrenamiento o prueba. Por ejemplo:
 #
